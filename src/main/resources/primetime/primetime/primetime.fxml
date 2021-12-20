@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="primetime.primetime.PrimeTimeSelectionController">
+   <children>
+      <Button fx:id="submitBtn" layoutX="309.0" layoutY="233.0" mnemonicParsing="false" text="SUBMIT" />
+      <Label alignment="CENTER" prefHeight="40.0" prefWidth="400.0" style="-fx-background-color: GREY;" text="PRIME TIME SCHEDULE" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="abcRB" layoutX="14.0" layoutY="60.0" mnemonicParsing="false" text="ABC">
+         <toggleGroup>
+            <ToggleGroup fx:id="choicesTG" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="cbsRB" layoutX="14.0" layoutY="103.0" mnemonicParsing="false" text="CBS" toggleGroup="$choicesTG" />
+      <RadioButton fx:id="nbcRB" layoutX="14.0" layoutY="146.0" mnemonicParsing="false" text="NBC" toggleGroup="$choicesTG" />
+      <RadioButton fx:id="foxRB" layoutX="14.0" layoutY="189.0" mnemonicParsing="false" text="FOX" toggleGroup="$choicesTG" />
+      <ComboBox fx:id="dayCB" layoutX="147.0" layoutY="164.0" prefWidth="150.0" promptText="DAY" />
+      <ComboBox fx:id="timeCB" layoutX="147.0" layoutY="78.0" prefWidth="150.0" promptText="TIME" />
+      <RadioButton fx:id="allRB" layoutX="14.0" layoutY="224.0" mnemonicParsing="false" text="SHOW ALL" toggleGroup="$choicesTG" />
+   </children>
+</AnchorPane>
