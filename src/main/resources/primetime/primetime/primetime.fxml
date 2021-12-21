@@ -10,7 +10,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="primetime.primetime.PrimeTimeSelectionController">
    <children>
-      <Button fx:id="submitBtn" layoutX="309.0" layoutY="233.0" mnemonicParsing="false" text="SUBMIT" />
+      <Button fx:id="submitBtn" layoutX="309.0" layoutY="233.0" mnemonicParsing="false" onAction="#submitBtnOnAction" text="SUBMIT" />
       <Label alignment="CENTER" prefHeight="40.0" prefWidth="400.0" style="-fx-background-color: GREY;" text="PRIME TIME SCHEDULE" textFill="WHITE">
          <font>
             <Font size="23.0" />
